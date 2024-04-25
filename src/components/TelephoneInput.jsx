@@ -6,7 +6,7 @@ export default function TelephoneInput({ value, onFocus }) {
         readOnly
         value={value}
         onFocus={onFocus}
-        className=" text-black border border-gray-300 outline-offset-2 outline-2   w-[500px] h-[50px] focus:outline-2 focus:ring-gray-500 outline-none focus:ring-offset-2 focus:ring-1"
+        className=" text-black border border-gray-300 outline-offset-2 outline-2   w-[300px] h-[50px] focus:outline-2 focus:ring-gray-500 outline-none focus:ring-offset-2 focus:ring-1"
       />
     </div>
   );

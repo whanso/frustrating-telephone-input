@@ -10,6 +10,8 @@ function App() {
     setShowNumbers(true);
   };
   const onSelectNumber = (number) => {
+    console.log("select callback");
+
     setInput(`${input}${number}`);
   };
   return (

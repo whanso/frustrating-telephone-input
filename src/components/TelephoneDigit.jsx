@@ -50,7 +50,9 @@ export default function TelephoneDigit({
       className="opacity-0"
     >
       <motion.div
+        tabIndex={0}
         onClick={onSelect}
+        onKeyPress={onSelect}
         animate={{ x: destLoc.x, y: destLoc.y }}
         transition={{
           ease: "linear",
@@ -96,7 +98,7 @@ export default function TelephoneDigit({
           }
         }}
         className={twMerge(
-          ` rounded-[50%] bg-red-400 cursor-pointer w-[100px] h-[100px] inline-flex items-center justify-center absolute top-0 text-6xl font-bold`,
+          ` rounded-[50%] bg-red-400 cursor-pointer w-[100px] h-[100px] inline-flex items-center justify-center absolute top-0 text-6xl font-bold active:brightness-90 focus:outline-offset-4 focus:outline focus:outline-4 focus:outline-blue-500`,
           classNames
         )}
       >
